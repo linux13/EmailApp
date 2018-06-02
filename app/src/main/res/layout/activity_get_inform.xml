@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetInform" android:weightSum="70" android:orientation="vertical" android:background="#80DEEA">
+
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp" android:layout_weight="10" android:weightSum="10" android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="1.5">
+        <TextView
+          android:gravity="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:text="To" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent" android:layout_weight="8.5">
+        <EditText
+            android:id="@+id/getemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="10" android:weightSum="10" android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:layout_weight=".7">
+            <TextView
+               android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+              android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:text="Subject" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="9.3">
+            <EditText
+                android:id="@+id/getSubject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailSubject"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="40" android:weightSum="10">
+        <EditText
+            android:id="@+id/getMessage"
+            android:textColorHint="#030303"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  android:hint="Write Something..," android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="10" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="18dp"
+                android:background="#efe3e3"
+                android:onClick="next"
+                android:text="Next"
+                android:textColor="#181717"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

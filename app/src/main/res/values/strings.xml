@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EmailApp</string>
+    <string name="about">"This App is developed by Md Asfak Hussain Shafi \n This is an Test Application \n It's built only for learning purposes "</string>
+</resources>
